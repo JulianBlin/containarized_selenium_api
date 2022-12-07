@@ -18,7 +18,7 @@ def return_population_by_country(selenium_driver,
                                                                       "Population(1 July 2018)": "population_2018",
                                                                       "Population(1 July 2019)": "population_2019",
                                                                       "Change": "change"})
-
+    full_table.head()
     if continent is None:
         return_df = full_table[["country", "continent", "population_2018", "population_2019"]]
     else:
